@@ -1,0 +1,99 @@
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 500px;
+  padding: 50px;
+  /* Change color to whatever you guys like */
+  background-color: #98d3aa;
+  border-radius: 2rem;
+  border: 5px solid #b9e344;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.login-container {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  padding-bottom: 20px;
+}
+
+.login-form-container {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+}
+
+.new-account-form-container {
+  width: 900px;
+  height: 550px;
+  background-color: #98d3aa;
+  position: absolute;
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 2rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border: 5px solid #b9e344;
+}
+
+.register-form-container,
+.register-form {
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.hidden {
+  display: none;
+}
+
+.gray {
+  position: absolute;
+  background-color: gray;
+  opacity: 50%;
+  width: 100%;
+  height: 100vh;
+  left: 0;
+  top: 0;
+}
+
+.login-background {
+  background-image: url("../../images/background.png");
+  left: 0;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  position: fixed;
+  transform: translateY(50px);
+}
+
+button {
+  color: white;
+  background-color: black;
+  border: 1px solid black;
+  border-radius: 2em;
+  padding: 2px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.new-account-form-container > div {
+  margin-bottom: 15px;
+}
+
+.new-account-form-container > div > img {
+  width: 250px;
+}
+
+.failed-login-notification {
+  font-size: 20px;
+  margin-top: 30px;
+  color: red;
+}
